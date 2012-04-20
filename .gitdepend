@@ -2,3 +2,7 @@
   repo: git://github.com/matsko/MooTools-Scour.git
 - path: Plugins/xef.js
   repo: git://github.com/matsko/xef.js.git
+- path: Plugins/MooSelect
+  repo: git://github.com/matsko/MooSelect.git
+- path: Plugins/MooStars
+  repo: git://github.com/matsko/MooStars.git
