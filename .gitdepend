@@ -1,0 +1,4 @@
+- path: Plugins/MooTools-Scour
+  repo: git://github.com/matsko/MooTools-Scour.git
+- path: Plugins/xef.js
+  repo: git://github.com/matsko/xef.js.git
