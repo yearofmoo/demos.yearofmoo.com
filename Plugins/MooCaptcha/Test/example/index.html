@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Untitled Document</title> 
+<link rel="stylesheet" type="text/css" href="../../Source/MooCaptcha.css" />
+</head> 
+ 
+<body> 
+  <div id="some-container"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.2/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="../../Source/MooCaptcha.js"></script>
+<script type="text/javascript">
+window.addEvent('domready',function() {
+    var container = $('some-container');
+    new MooCaptcha(container,{
+        publicKey:'6LdiN8MSAAAAAIGexmNmy0QsfUSBJRZ8mbbtj-5n',
+        theme:'clean',
+        onLibraryDownload : function() {
+        },
+        onReady : function() {
+        }
+    });
+});
+</script>  
+</body> 
+</html> 

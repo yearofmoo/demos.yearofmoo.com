@@ -1,8 +1,21 @@
 - path: Plugins/MooTools-Scour
   repo: git://github.com/matsko/MooTools-Scour.git
+  keep: false
 - path: Plugins/xef.js
   repo: git://github.com/matsko/xef.js.git
+  keep: false
 - path: Plugins/MooSelect
   repo: git://github.com/matsko/MooSelect.git
+  keep: false
 - path: Plugins/MooStars
   repo: git://github.com/matsko/MooStars.git
+  keep: false
+- path: Plugins/MooTools-Formular
+  repo: git://github.com/matsko/MooTools-Formular.git
+  keep: false
+- path: Plugins/MooTools-Formular
+  repo: git://github.com/matsko/MooTools-Formular.git
+  keep: false
+- path: Plugins/MooCaptcha
+  repo: git://github.com/matsko/MooCaptcha.git
+  keep: false
