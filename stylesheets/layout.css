@@ -1,0 +1,62 @@
+html,body {
+  background:#eee;
+  color:black;
+}
+
+html, body, textarea, input, select, option, pre, code {
+  font-family:verdana;
+  font-size:12px;
+}
+
+#header {
+  background:black;
+  height:40px;
+  border-top:50px solid #222;
+  box-shadow:0px 0px 50px #555;
+}
+
+#header a:link,
+#header a:active,
+#header a:visited {
+  color:white;
+}
+
+#header, #header a:hover {
+  color:white;
+}
+
+.wrap {
+  position:relative;
+  width:1000px;
+  margin:0 auto;
+}
+
+#logo {
+  position:absolute;
+  top:-50px;
+  width:150px;
+  height:138px;
+  display:block;
+  float:left;
+  cursor:pointer;
+  text-indent:-9999px;
+  background:url(../images/logo.png) no-repeat 0 0;
+}
+
+#main-navigation {
+  padding-left:170px;
+}
+
+#main-navigation li {
+  display:inline;
+  font-size:1.3em;
+}
+
+#main-navigation li.last {
+  float:right;
+}
+
+#main-navigation a {
+  padding:12px;
+  display:inline-block;
+}

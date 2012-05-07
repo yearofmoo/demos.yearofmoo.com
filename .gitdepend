@@ -1,3 +1,6 @@
+- repo: git://github.com/sorccu/cufon.git
+  path: javascripts`/plugins/cufon
+  keep: false
 - path: Plugins/MooTools-Scour
   repo: git://github.com/matsko/MooTools-Scour.git
   keep: false
