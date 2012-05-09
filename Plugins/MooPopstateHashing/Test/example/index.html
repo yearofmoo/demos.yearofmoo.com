@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<script type="text/javascript"><!--
+var x=0,u=new String(window.location),i=u.indexOf('#');if(i>0){if(u.indexOf('#!/')>=0)x+=1;window.location=u.substr(i+x+1);}
+--></script> 
+<title>MooPopstateHashing Example1</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</head> 
+
+<body id="" class=""> 
+  <div id="wrapper">
+    <a href="/value1/">hello</a>
+    <a href="/fatias/?and=me">hello</a>
+    <a class="ignore" href="#valu2">valu2</a>
+  </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="../../Source/MooPopstateHashing.js"></script>
+<script type="text/javascript">
+window.addEvent('domready',function() {
+
+  window.addEvent('addressChange',function(path,data,title) {
+    alert(path);
+  });
+
+  $$('a').addEvent('click',function(event) {
+    if(!this.hasClass('ignore')) {
+      event.stop();
+      var href = this.get('href');
+      window.setAddress(href,{ value : 'true' },'ajax');
+    }
+  });
+
+});
+</script>
+</body>
+</html> 
