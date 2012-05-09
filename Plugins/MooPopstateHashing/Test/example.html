@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<script type="text/javascript"><!--
+var x=0,u=new String(window.location),i=u.indexOf('#');if(i>0){if(u.indexOf('#!/')>=0)x+=1;window.location=u.substr(i+x+1);}
+--></script> 
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]--> 
+<title>TITLE</title> 
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" /> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta http-equiv="imagetoolbar" content="no" /> 
+<meta http-equiv="X-UA-Compatible" content="chrome=1" /> 
+<link rel="shortcut icon" href="/graphics/favicon.png" /> 
+<link rel="stylesheet" type="text/css" href="/stylesheets/reset.css" /> 
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" /> 
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/ie8.css" />
+<![endif]--> 
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" media="all" href="/stylesheets/ie7.css" />
+<![endif]--> 
+</head> 
+
+<body id="" class=""> 
+  <div id="wrapper">
+    <a href="/matias/">hello</a>
+    <a href="/fatias/?and=me">hello</a>
+    <a class="ignore" href="#matias">matias</a>
+  </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
+<script type="text/javascript" src="../Source/MooPopstateHashing.js"></script>
+<script type="text/javascript">
+window.addEvent('domready',function() {
+
+  window.addEvent('addressChange',function(path,data,title) {
+    alert(path);
+  });
+  $$('a').addEvent('click',function(event) {
+    if(!this.hasClass('ignore')) {
+      event.stop();
+      var href = this.get('href');
+      window.setAddress(href,{ matias : 'true' },'ajax');
+    }
+  });
+
+});
+</script>
+</body>
+</html> 

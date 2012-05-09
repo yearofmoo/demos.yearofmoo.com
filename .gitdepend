@@ -22,3 +22,6 @@
 - path: Plugins/MooCaptcha
   repo: git://github.com/matsko/MooCaptcha.git
   keep: false
+- path: Plugins/MooPopstateHashing
+  repo: git://github.com/matsko/MooPopstateHashing.git
+  keep: false
